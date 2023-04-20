@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.imagenUno {
+  height: 200px;
+}
+
+.imagenUno img {
+  height: 100%;
+  padding: 15px;
+}
+
+.logo {
+  height: 150px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.listaLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.listaLinks li a {
+  color: deeppink;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.listaLinks li a:hover {
+  color: rgb(27, 27, 27);
+  background-color: lightblue;
+}
+
+#sinopsis {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+#sinopsis img {
+  width: 200px;
+}
+
+#sinopsis h2 {
+  font-size: 40px;
+}
+
+.contenedor-personajes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-personajes {
+  margin-bottom: 30px;
+}
+
+.titulo-personajes h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedor-card {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.card {
+  background-color: rgba(103, 248, 238, 0.561);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: rgb(233, 22, 166);
+}
+
+.card img {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.card .informacion {
+  text-align: center;
+}
+
+.card .informacion h3 {
+  color: darkviolet;
+}
+
+footer {
+  background-color: darkviolet;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer div nav ul {
+  list-style: none;
+}
+footer div nav ul li {
+  padding: 10px;
+  margin: 5px;
+}
+
+#Episodios {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Episodios img {
+  opacity: 0.8;
+}
+
+#Episodios a {
+  padding: 10px 20px;
+  color: #fff;
+}
+
+#Episodios .hbo {
+  background-color: blueviolet;
+}
+
+#Episodios .youtube {
+  background-color: pink;
+}
+
+
+@media screen and (max-width: 1000px){
+  nav{
+    flex-direction: column;
+  }
+
+  nav .imagenUno {
+    display: none;
+  }
+
+  #Episodios{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .listaLinks{
+    flex-direction: column;
+  }
+
+  #sinopsis{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  footer{
+    flex-direction: column;
+    text-align: center;
+  }
+}
