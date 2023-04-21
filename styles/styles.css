@@ -144,12 +144,14 @@ footer div nav ul li {
 #Episodios {
   margin: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
 #Episodios img {
   opacity: 0.8;
+  width: 100%;
 }
 
 #Episodios a {
@@ -158,11 +160,18 @@ footer div nav ul li {
 }
 
 #Episodios .hbo {
-  background-color: blueviolet;
+  background-color: green;
 }
 
 #Episodios .youtube {
   background-color: pink;
+}
+
+ .contenedor-botones{ 
+display: flex;
+justify-content: flex-start;
+gap: 2rem;
+width: 100%;
 }
 
 
